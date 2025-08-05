@@ -1,0 +1,3 @@
+C:/Users/Owner/OneDrive/Desktop/SDLIntro/build/CMakeFiles/SdlIntro.dir
+C:/Users/Owner/OneDrive/Desktop/SDLIntro/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Owner/OneDrive/Desktop/SDLIntro/build/CMakeFiles/ZERO_CHECK.dir
