@@ -10,7 +10,7 @@ find_package(SDL3 CONFIG REQUIRED)
 find_package(OpenGL REQUIRED)
 
 # Create your executable
-add_executable(SdlIntro src/main.cpp src/glad.c src/Application.cpp)
+add_executable(SdlIntro src/main.cpp src/glad.c src/Shader.cpp src/Application.cpp )
 
 target_include_directories(SdlIntro PRIVATE include)
 
