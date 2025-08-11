@@ -26,7 +26,7 @@ events:
       Microsoft (R) Build Engine version 17.1.0+ae57d105c for .NET Framework
       Copyright (C) Microsoft Corporation. All rights reserved.
       
-      Build started 8/4/2025 6:29:23 PM.
+      Build started 8/11/2025 3:16:34 PM.
       Project "C:\\Users\\Owner\\OneDrive\\Desktop\\SDLIntro\\build\\CMakeFiles\\3.28.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
         Creating directory "Debug\\".
@@ -61,7 +61,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:05.05
+      Time Elapsed 00:00:02.81
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -80,8 +80,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/Owner/OneDrive/Desktop/SDLIntro/build/CMakeFiles/CMakeScratch/TryCompile-tzqgt6"
-      binary: "C:/Users/Owner/OneDrive/Desktop/SDLIntro/build/CMakeFiles/CMakeScratch/TryCompile-tzqgt6"
+      source: "C:/Users/Owner/OneDrive/Desktop/SDLIntro/build/CMakeFiles/CMakeScratch/TryCompile-lynh4m"
+      binary: "C:/Users/Owner/OneDrive/Desktop/SDLIntro/build/CMakeFiles/CMakeScratch/TryCompile-lynh4m"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -94,39 +94,39 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Owner/OneDrive/Desktop/SDLIntro/build/CMakeFiles/CMakeScratch/TryCompile-tzqgt6'
+        Change Dir: 'C:/Users/Owner/OneDrive/Desktop/SDLIntro/build/CMakeFiles/CMakeScratch/TryCompile-lynh4m'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_364c6.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_3875c.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         Microsoft (R) Build Engine version 17.1.0+ae57d105c for .NET Framework
         Copyright (C) Microsoft Corporation. All rights reserved.
         
-        Build started 8/4/2025 6:29:30 PM.
-        Project "C:\\Users\\Owner\\OneDrive\\Desktop\\SDLIntro\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tzqgt6\\cmTC_364c6.vcxproj" on node 1 (default targets).
+        Build started 8/11/2025 3:16:37 PM.
+        Project "C:\\Users\\Owner\\OneDrive\\Desktop\\SDLIntro\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lynh4m\\cmTC_3875c.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_364c6.dir\\Debug\\".
-          Creating directory "C:\\Users\\Owner\\OneDrive\\Desktop\\SDLIntro\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tzqgt6\\Debug\\".
-          Creating directory "cmTC_364c6.dir\\Debug\\cmTC_364c6.tlog\\".
+          Creating directory "cmTC_3875c.dir\\Debug\\".
+          Creating directory "C:\\Users\\Owner\\OneDrive\\Desktop\\SDLIntro\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lynh4m\\Debug\\".
+          Creating directory "cmTC_3875c.dir\\Debug\\cmTC_3875c.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_364c6.dir\\Debug\\cmTC_364c6.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Creating "cmTC_3875c.dir\\Debug\\cmTC_3875c.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_364c6.dir\\Debug\\\\" /Fd"cmTC_364c6.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3875c.dir\\Debug\\\\" /Fd"cmTC_3875c.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.31.31105 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
           CMakeCXXCompilerABI.cpp
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_364c6.dir\\Debug\\\\" /Fd"cmTC_364c6.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3875c.dir\\Debug\\\\" /Fd"cmTC_3875c.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp"
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Owner\\OneDrive\\Desktop\\SDLIntro\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tzqgt6\\Debug\\cmTC_364c6.exe" /INCREMENTAL /ILK:"cmTC_364c6.dir\\Debug\\cmTC_364c6.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Owner/OneDrive/Desktop/SDLIntro/build/CMakeFiles/CMakeScratch/TryCompile-tzqgt6/Debug/cmTC_364c6.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Owner/OneDrive/Desktop/SDLIntro/build/CMakeFiles/CMakeScratch/TryCompile-tzqgt6/Debug/cmTC_364c6.lib" /MACHINE:X64  /machine:x64 cmTC_364c6.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_364c6.vcxproj -> C:\\Users\\Owner\\OneDrive\\Desktop\\SDLIntro\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tzqgt6\\Debug\\cmTC_364c6.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Owner\\OneDrive\\Desktop\\SDLIntro\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lynh4m\\Debug\\cmTC_3875c.exe" /INCREMENTAL /ILK:"cmTC_3875c.dir\\Debug\\cmTC_3875c.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Owner/OneDrive/Desktop/SDLIntro/build/CMakeFiles/CMakeScratch/TryCompile-lynh4m/Debug/cmTC_3875c.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Owner/OneDrive/Desktop/SDLIntro/build/CMakeFiles/CMakeScratch/TryCompile-lynh4m/Debug/cmTC_3875c.lib" /MACHINE:X64  /machine:x64 cmTC_3875c.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_3875c.vcxproj -> C:\\Users\\Owner\\OneDrive\\Desktop\\SDLIntro\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lynh4m\\Debug\\cmTC_3875c.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_364c6.dir\\Debug\\cmTC_364c6.tlog\\unsuccessfulbuild".
-          Touching "cmTC_364c6.dir\\Debug\\cmTC_364c6.tlog\\cmTC_364c6.lastbuildstate".
-        Done Building Project "C:\\Users\\Owner\\OneDrive\\Desktop\\SDLIntro\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tzqgt6\\cmTC_364c6.vcxproj" (default targets).
+          Deleting file "cmTC_3875c.dir\\Debug\\cmTC_3875c.tlog\\unsuccessfulbuild".
+          Touching "cmTC_3875c.dir\\Debug\\cmTC_3875c.tlog\\cmTC_3875c.lastbuildstate".
+        Done Building Project "C:\\Users\\Owner\\OneDrive\\Desktop\\SDLIntro\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lynh4m\\cmTC_3875c.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:02.13
+        Time Elapsed 00:00:01.36
         
       exitCode: 0
 ...

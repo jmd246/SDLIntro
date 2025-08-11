@@ -10,7 +10,7 @@
     <ClCompile Include="C:\Users\Owner\OneDrive\Desktop\SDLIntro\src\Application.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\glad.c">
+    <ClCompile Include="C:\Users\Owner\OneDrive\Desktop\SDLIntro\src\Mesh.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

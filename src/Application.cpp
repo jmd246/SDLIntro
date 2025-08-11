@@ -3,6 +3,7 @@
 #include <SDL3/SDL_opengl.h>  
 #include <iostream>
 #include <Shader.hpp>
+#include <Mesh.hpp>
 #include <Application.hpp>
 
 Application::Application(const char* title, int w, int h) {
@@ -26,19 +27,22 @@ void Application::run()
        0.5f,-0.5f,0,
        0,0.5f,0
     };
+    std::vector<Vertex> vertices = {
+      {{-0.5f, -0.5f, 0.0f}, {}, {0.0f, 0.0f}},
+      {{0.5f, -0.5f, 0.0f}, {}, {1.0f, 0.0f}},
+      {{0.0f,  0.5f, 0.0f}, {}, {0.5f, 1.0f}}
+    };
+
+    std::vector<uint32_t> indices = { 0, 1, 2 };
+
+    Mesh triangleMesh(vertices, indices);
+
      isRunning = true;
-     Shader shader("../src/vert.txt", "../src/frag.txt");
+     Shader shader("../assets/Shaders/vert.txt", "../assets/Shaders/frag.txt");
      if (!shader.build()) {
          return;
      }
-     GLuint vbo, vao;
-     glGenBuffers(1, &vbo);
-     glGenVertexArrays(1, &vao);
-     glBindBuffer(GL_ARRAY_BUFFER,vbo);
-     glBufferData(GL_ARRAY_BUFFER, sizeof(triangle), triangle, GL_STATIC_DRAW);
-     glBindVertexArray(vao);
-     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(float) * 3, (void*)0);
-     glEnableVertexAttribArray(0);
+
      std::string uniformName = "greenVal";
     while (isRunning) {
         float currTime = SDL_GetTicks();
@@ -48,8 +52,7 @@ void Application::run()
         glClear(GL_COLOR_BUFFER_BIT);
         shader.setFloat(uniformName, greenVal);
         shader.use();
-        glBindVertexArray(vao);
-        glDrawArrays(GL_TRIANGLES, 0, 3);
+        triangleMesh.draw();
         SDL_GL_SwapWindow(window);
     }
 }
