@@ -27,7 +27,7 @@ target_include_directories(glad PUBLIC
 
 
 # Create your executable
-add_executable(SdlIntro src/main.cpp src/Shader.cpp src/Application.cpp src/Mesh.cpp)
+add_executable(SdlIntro src/main.cpp src/Shader.cpp src/Application.cpp src/Mesh.cpp src/Renderer.cpp src/Camera.cpp)
 
 target_include_directories(SdlIntro PRIVATE include)
 

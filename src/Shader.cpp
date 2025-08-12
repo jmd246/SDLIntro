@@ -62,20 +62,24 @@
 		 glDeleteShader(frag);
 		return true;
 	}
-	void Shader::use() {
+	void Shader::use() const{
 		glUseProgram(id);
 	}
 
-	void Shader::setBool(std::string &name,bool  val) {
+	void Shader::setBool(std::string &name,bool  val)	const {
 		glUniform1i(glGetUniformLocation(id, name.c_str()), val);
 	}
-	void Shader::setFloat(std::string& name, float val) {
+	void Shader::setFloat(std::string& name, float val)	const {
 		glUniform1f(glGetUniformLocation(id, name.c_str()), val);
 	}
-	void Shader::setInt(std::string& name, int val) {
+	void Shader::setInt(std::string& name, int val)	const {
 		glUniform1i(glGetUniformLocation(id, name.c_str()), val);
 
 	}
-	void Shader::setFloat3(std::string& name, float x, float y, float z) {
+	void Shader::setFloat3(std::string& name, float x, float y, float z)const {
 		glUniform3f(glGetUniformLocation(id, name.c_str()), x,y,z);
+	}
+	void Shader::setMat4(std::string& name, const glm::mat4& matrix) const {
+		GLint  loc = glGetUniformLocation(id, name.c_str());
+		glUniformMatrix4fv(loc, 1, GL_FALSE, glm::value_ptr(matrix));
 	}

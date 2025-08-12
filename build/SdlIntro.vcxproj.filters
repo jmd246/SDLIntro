@@ -13,6 +13,12 @@
     <ClCompile Include="C:\Users\Owner\OneDrive\Desktop\SDLIntro\src\Mesh.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\Owner\OneDrive\Desktop\SDLIntro\src\Renderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Owner\OneDrive\Desktop\SDLIntro\src\Camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\Users\Owner\OneDrive\Desktop\SDLIntro\CMakeLists.txt" />
