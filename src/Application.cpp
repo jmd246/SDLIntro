@@ -92,8 +92,11 @@ void Application::run()
     Mesh triangleMesh(vertices, indices);
 
      isRunning = true;
-     Shader shader("../assets/Shaders/vert.txt", "../assets/Shaders/frag.txt");
+     const char *vertPath = "C:\\Users\\Owner\\OneDrive\\Desktop\\SDLIntro\\assets\\Shaders\\vert.txt",
+         *fragPath = "C:\\Users\\Owner\\OneDrive\\Desktop\\SDLIntro\\assets\\Shaders\\frag.txt";
+     Shader shader(vertPath,fragPath);
      if (!shader.build()) {
+         std::cout << "Failed to build shader" << std::endl;
          return;
      }
 
@@ -138,7 +141,6 @@ void Application::ProcessInput(float dt)
         else if (event.type == SDL_EVENT_MOUSE_MOTION) {
             float xoffset = static_cast<float>(event.motion.xrel);
             float yoffset = static_cast<float>(-event.motion.yrel); // invert Y
-            std::cout << xoffset << "    " << yoffset << std::endl;
             m_renderer->m_cam.ProcessMouseMovement(xoffset, yoffset, false);
         }
     }

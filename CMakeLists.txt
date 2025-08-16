@@ -5,25 +5,22 @@ project(SdlIntro LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+# Force CMake to use your specific vcpkg installation
+set(CMAKE_TOOLCHAIN_FILE
+    "C:/Users/Owner/OneDrive/Desktop/SDLIntro/vcpkg/scripts/buildsystems/vcpkg.cmake"
+    CACHE STRING "Vcpkg toolchain file"
+)
+
 
 
 # Find SDL3 and OpenGL
 find_package(SDL3 CONFIG REQUIRED)
+
+find_package(imgui CONFIG REQUIRED)
+find_package(glad CONFIG REQUIRED)
 find_package(OpenGL REQUIRED)
 
-add_library(glad STATIC)
 
-target_sources(glad PRIVATE src/glad.c)
-
-set_target_properties(glad PROPERTIES
-    LINKER_LANGUAGE C
-    C_STANDARD 99
-    C_STANDARD_REQUIRED ON
-)
-
-target_include_directories(glad PUBLIC
-    ${CMAKE_SOURCE_DIR}/include
-)
 
 
 # Create your executable
@@ -33,12 +30,6 @@ target_include_directories(SdlIntro PRIVATE include)
 
 
 # Link SDL3 and OpenGL
-target_link_libraries(SdlIntro PRIVATE glad SDL3::SDL3 OpenGL::GL)
+target_link_libraries(SdlIntro PRIVATE glad::glad SDL3::SDL3 OpenGL::GL)
 
-# Assume SDL3.dll is located in the vcpkg installed path
-set(SDL3_DLL "${CMAKE_SOURCE_DIR}/vcpkg/installed/x64-windows/bin/SDL3.dll")
 
-add_custom_command(TARGET SdlIntro POST_BUILD
-    COMMAND ${CMAKE_COMMAND} -E copy_if_different
-    "${SDL3_DLL}"
-    $<TARGET_FILE_DIR:SdlIntro>)
